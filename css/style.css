@@ -1,0 +1,125 @@
+body{
+  background-color:#000000;
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1600px;
+  height: 501px;
+  margin-top: -250px;
+  margin-left: -800px;
+  background-position: center;
+  background-image: url(../icons/1357.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.center {
+  position: absolute;
+  width: 1600px;
+  height: 375px;
+  }
+.dot-1 {
+  position: absolute;
+  z-index: 3;
+  width: 700px;
+  height: 500px;
+  top: -158px;
+  left: 578px;
+  background-image: url(../icons/11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-fill-mode: both;
+  animation: jump-jump-1 0.2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+.dot-2 {
+  position: absolute;
+  z-index: 3;
+  width: 700px;
+  height: 500px;
+  top: -140px;
+  left: 320px;
+  background-image: url(../icons/12.png);
+  background-position: center;
+  background-repeat: no-repeat;  
+  animation-fill-mode: both;
+  animation: jump-jump-2 0.3s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+.dot-3 {
+  position: absolute;
+  z-index: 1;
+  width: 450px;
+  height: 200px;
+  top: 160px;
+  left: 336px;
+  background-image: url(../icons/9c1291fb5de5f9b8c2706906d01ff743.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-fill-mode: both;
+  animation: jump-jump-3 0.5s cubic-bezier(0.21, 5.98, 0.6, -7.99) infinite alternate;
+}
+.dot-4 {
+  position: absolute;
+  z-index: 1;
+  width: 450px;
+  height: 200px;
+  top: 158px;
+  left: 821px;
+  background-image: url(../icons/9c1291fb5de5f9b8c2706906d01ff743.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-fill-mode: both;
+  animation: jump-jump-3 1.5s cubic-bezier(0.21, 3.98, 0.6, -2.99) infinite alternate;
+}
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: absolute;
+  width: auto;
+  top: 75%;
+  left: 47%;
+  margin: 0 auto;
+  color: #d4d4d4;
+}
+.dots {
+  display: inline-block;
+  width: 5px;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots 1.5s linear infinite;
+  transition: 1;
+} 
+@keyframes dots {
+	from{
+		width: 0px;}
+	to{
+    width: 30px;}
+}
+@keyframes jump-jump-1 {
+  0%, 70% {
+  transform: scale(0);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+@keyframes jump-jump-2 {
+  0%, 40% {
+  transform: scale(0);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+@keyframes jump-jump-3 {
+  0%, 10% {
+  transform: scale(0);
+  }
+  30% {
+  transform: scale(1);
+  }
+}
